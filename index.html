@@ -4,134 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Happy New Year</title>
-    <style>
-        /* Сброс стандартных отступов и базовые стили */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            background-image: url('./img/елка.jpeg');
-            background-size: 100% 100%; 
-            background-repeat: no-repeat;
-            background-position: center;
-            background-attachment: fixed;
-            min-height: 100vh;
-            font-family: Arial, sans-serif;
-            overflow-x: hidden; /* Скрываем горизонтальный скролл */
-        }
-        
-        /* Общие стили для всех кликабельных картинок */
-        .clickable-image {
-            position: absolute;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
-            -webkit-user-drag: none;
-            user-drag: none;
-            transition: transform 0.3s ease, filter 0.3s ease;
-            cursor: pointer;
-        }
-        
-        .clickable-image:hover {
-            transform: scale(1.1) rotate(5deg);
-            filter: drop-shadow(0 0 10px gold);
-        }
-        
-        /* Отдельные позиции для каждой картинки */
-        .sock {
-            left: 1100px;
-            top: 420px;
-            width: 6%;
-        }
-        
-        .gift {
-            left: 300px;
-            top: 690px;
-            width: 13%;
-        }
-        
-        .candle {
-            left: 1630px;
-            top: 265px;
-            width: 4%;
-        }
-        
-        .frame {
-            left: 1130px;
-            top: 1px;
-            width: 25%;
-            cursor: default; /* Рамка не кликабельна */
-        }
-        
-        .frame:hover {
-            transform: none; /* Убираем анимацию при наведении на рамку */
-            filter: none;
-        }
-        
-        /* Стили для ссылок */
-        a {
-            text-decoration: none;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
-            display: inline-block;
-        }
-        
-        /* Для неактивной ссылки (рамка) */
-        a:not([href]) {
-            cursor: default;
-        }
-        
-        /* Медиа-запрос для адаптивности (опционально) */
-        @media (max-width: 1600px) {
-            .sock { left: 900px; }
-            .candle { left: 1100px; }
-        }
-        
-        @media (max-width: 768px) {
-            body {
-                background-image: url('./img/елка-мобильная.png');
-                background-size: cover;
-                background-position: center;
-            }
-            
-            .sock {
-                left: 63% !important;
-                top: 45% !important;
-                width: 18% !important;
-                transform: translateX(-50%);
-            }
-            
-            .gift {
-                left: 3% !important;
-                top: 81% !important;
-                width: 30% !important;
-            }
-            
-            .candle {
-                left: 78% !important;
-                top: 29% !important;
-                width: 12% !important;
-            }
-            
-            .frame {
-                left: 72% !important;
-                top: 6% !important;
-                width: 55% !important;
-                transform: translateX(-50%);
-            }
-            
-            .clickable-image:hover {
-                transform: scale(1.05) rotate(3deg);
-            }
-        }
-        }
-    </style>
 </head>
 <body>
     <!-- Новогодний носок -->
@@ -164,6 +36,7 @@
          class="clickable-image frame">
 </body>
 </html>
+
 
 
 
