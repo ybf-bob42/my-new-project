@@ -1,4 +1,4 @@
-<style>
+@import url('https://ybf-bob42.github.io/my-new-project/');
         /* Сброс стандартных отступов и базовые стили */
         * {
             margin: 0;
@@ -125,4 +125,3 @@
             }
         }
         }
-    </style>
